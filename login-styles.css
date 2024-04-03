@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(0deg,#ffb6c1, #add8e6);
+    border: 5px solid green;
+    box-sizing: border-box;
+}
+
+.login-card{
+    height: 150px;
+    width: 200px;  
+
+    border: 5px solid violet;
+
+}
