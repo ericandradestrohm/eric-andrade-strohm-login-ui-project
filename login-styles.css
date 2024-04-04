@@ -9,32 +9,44 @@ body{
     height: 100vh;
     width: 100vw;
 
-    border: 5px solid green;
     box-sizing: border-box;
 }
 
 .login-card{
     height: 300px;
-    width: 400px;  
+    width: 500px;  
 
-    border: 5px solid violet;
-    box-shadow: 10px 5px 5px black;
-}
+    /* Border and spacing styling */
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 10px 10px rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
 
-.text{
-    font-family: sans-serif;
-
+    /* flex adjustments */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
+    font-family: sans-serif;
 }
 
 #sign-in{
-    font-size: 32px;
+    font-size: 48px;
 }
 
 #username, #password {
     border: none;
     border-bottom: 1px solid grey;
+}
+
+#sign-in-button{
+    width: 200px;
+
+    border:none;
+    border-radius: 30px;
+    padding: 10px 50px;
+
+    color: white;
+    background-color: rgb(19, 144, 222);
 }
