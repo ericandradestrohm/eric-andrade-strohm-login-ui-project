@@ -9,15 +9,32 @@ body{
     height: 100vh;
     width: 100vw;
 
-    background: linear-gradient(0deg,#ffb6c1, #add8e6);
     border: 5px solid green;
     box-sizing: border-box;
 }
 
 .login-card{
-    height: 150px;
-    width: 200px;  
+    height: 300px;
+    width: 400px;  
 
     border: 5px solid violet;
+    box-shadow: 10px 5px 5px black;
+}
 
+.text{
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in{
+    font-size: 32px;
+}
+
+#username, #password {
+    border: none;
+    border-bottom: 1px solid grey;
 }
