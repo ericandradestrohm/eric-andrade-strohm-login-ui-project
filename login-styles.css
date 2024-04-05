@@ -3,8 +3,14 @@ body {
     margin: 0;
     font-family: "Comfortaa", Arial, sans-serif;
     font-size: 16px;
+
+    /* Fallback color */
+    background-color: #0077B6;
     /* Background generated from: https://app.haikei.app/ */
-    background-image: url("./stacked-waves-haikei.png");
+    /* Originally used a png, but it was too pixelated. Online sources recommended using
+    SVG file type, as it is better for geometric shapes.
+    https://www.youtube.com/watch?v=emFMHH2Bfvo */
+    background-image: url("./stacked-waves-haikei.svg");
     background-size: cover;
 }
 input, button {
@@ -26,7 +32,7 @@ input, button {
     width: 37vw;
     min-height: 270px;
     min-width: 300px;
-    background-color:rgba(144, 224, 239, 0.7);
+    background-color:rgba(144, 224, 239, 0.8);
     /* Border and spacing styling */
     border: none;
     padding: 20px;
