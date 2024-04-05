@@ -1,8 +1,11 @@
+/* Color Pallete from: https://coolors.co/palette/03045e-0077b6-00b4d8-90e0ef-caf0f8 */
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Comfortaa", Arial, sans-serif;
     font-size: 16px;
-    /* background: radial-gradient(#ffcccc, #ccffff); */
+    /* Background generated from: https://app.haikei.app/ */
+    background-image: url("./stacked-waves-haikei.png");
+    background-size: cover;
 }
 input, button {
     /* Required in order for font-size to apply */
@@ -16,58 +19,61 @@ input, button {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
-    background: linear-gradient(35deg, #ccffff, #ffcccc);
 }
 
 .login-card {
     height: 39vh;
     width: 40vw;
-    min-height: 250px;
+    min-height: 270px;
     min-width: 300px;
-    background-color:white;
+    background-color:rgba(144, 224, 239,0.7);
     /* Border and spacing styling */
     border: none;
-    padding: 10px;
-    box-shadow: 0 0 10px 10px rgba(211, 211, 211, 0.5);
-    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
 
     /* flex adjustments */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-
+    gap: 10px;
 }
 
 #sign-in-text {
     font-size: 48px;
+    font-weight: bold;
 }
 
 #username, #password {
     /* border: none;
     border-bottom: 1px solid grey; */
-    border: 1px solid rgb(180, 230, 255);
-    /* color should be lighter than sign in button */
-    background: rgb(177, 226, 255);
+    border: none;
+    background: hsl(190, 77%, 88%);
     border-radius: 30px;
+    /* Padding makes fields bigger and margin-top helps group things closer */
     padding: 10px;
+    margin-top: -30px;
 }
 #username:focus, #password:focus{
     /* Source: https://www.w3schools.com/css/css_pseudo_classes.asp */
-    /* Should be darker than background of #username and #password */
-    background: rgb(21, 119, 175);
+    /* Should be slightly darker than background of #username and #password */
+    background: hsl(190, 77%, 83%);
 }
+
 .clickable-links {
-    width: 14vw;
+    width: 15vw;
     height: 20px;
     min-width: 210px;
     font-size: 12px;
-    margin: 0px;
+    margin-top: -10px;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
+
 #sign-in-button {
     width: 10vw;
     min-width: 150px;
@@ -77,12 +83,13 @@ input, button {
     padding: 10px 50px;
 
     color: white;
-    background-color: rgb(19, 144, 222);
+    font-weight: bold;
+    background-color: hsl(201, 100%, 36%);
 }
 #sign-in-button:hover {
     box-shadow: 0px 0px 7px black;
 }
 #sign-in-button:active {
     /* Color should be darker than sign-in button */
-    background-color: rgb(14, 89, 133);
+    background-color: hsl(201, 100%, 30%);
 }
