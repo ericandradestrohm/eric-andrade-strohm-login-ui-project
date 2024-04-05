@@ -1,21 +1,30 @@
-body{
+body {
     margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    /* background: radial-gradient(#ffcccc, #ccffff); */
 }
-.container{
+input, button {
+    /* Required in order for font-size to apply */
+    font-size: inherit;
+}
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
     width: 100vw;
-
     box-sizing: border-box;
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
 }
 
-.login-card{
-    height: 300px;
-    width: 500px;  
-
+.login-card {
+    height: 39vh;
+    width: 40vw;
+    min-height: 250px;
+    min-width: 300px;
+    background-color:white;
     /* Border and spacing styling */
     border: none;
     padding: 10px;
@@ -25,23 +34,43 @@ body{
     /* flex adjustments */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
-    font-family: sans-serif;
 }
 
-#sign-in{
+#sign-in-text {
     font-size: 48px;
 }
 
 #username, #password {
-    border: none;
-    border-bottom: 1px solid grey;
+    /* border: none;
+    border-bottom: 1px solid grey; */
+    border: 1px solid rgb(180, 230, 255);
+    /* color should be lighter than sign in button */
+    background: rgb(177, 226, 255);
+    border-radius: 30px;
+    padding: 10px;
 }
+#username:focus, #password:focus{
+    /* Source: https://www.w3schools.com/css/css_pseudo_classes.asp */
+    /* Should be darker than background of #username and #password */
+    background: rgb(21, 119, 175);
+}
+.clickable-links {
+    width: 14vw;
+    height: 20px;
+    min-width: 210px;
+    font-size: 12px;
+    margin: 0px;
 
-#sign-in-button{
-    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#sign-in-button {
+    width: 10vw;
+    min-width: 150px;
 
     border:none;
     border-radius: 30px;
@@ -49,4 +78,11 @@ body{
 
     color: white;
     background-color: rgb(19, 144, 222);
+}
+#sign-in-button:hover {
+    box-shadow: 0px 0px 7px black;
+}
+#sign-in-button:active {
+    /* Color should be darker than sign-in button */
+    background-color: rgb(14, 89, 133);
 }
