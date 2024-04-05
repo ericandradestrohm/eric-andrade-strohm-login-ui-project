@@ -23,10 +23,10 @@ input, button {
 
 .login-card {
     height: 39vh;
-    width: 40vw;
+    width: 37vw;
     min-height: 270px;
     min-width: 300px;
-    background-color:rgba(144, 224, 239,0.7);
+    background-color:rgba(144, 224, 239, 0.7);
     /* Border and spacing styling */
     border: none;
     padding: 20px;
@@ -44,13 +44,14 @@ input, button {
 #sign-in-text {
     font-size: 48px;
     font-weight: bold;
+    color: black;
 }
 
 #username, #password {
     /* border: none;
     border-bottom: 1px solid grey; */
     border: none;
-    background: hsl(190, 77%, 88%);
+    background: hsl(190, 77%, 90%);
     border-radius: 30px;
     /* Padding makes fields bigger and margin-top helps group things closer */
     padding: 10px;
@@ -59,7 +60,7 @@ input, button {
 #username:focus, #password:focus{
     /* Source: https://www.w3schools.com/css/css_pseudo_classes.asp */
     /* Should be slightly darker than background of #username and #password */
-    background: hsl(190, 77%, 83%);
+    background: hsl(190, 77%, 86%);
 }
 
 .clickable-links {
@@ -75,21 +76,21 @@ input, button {
 }
 
 #sign-in-button {
-    width: 10vw;
+    width: 11vw;
     min-width: 150px;
 
-    border:none;
+    border:1px hsl(239, 94%, 19%) solid;
     border-radius: 30px;
-    padding: 10px 50px;
+    padding: 10px 10px 10px 10px;
 
-    color: white;
+    color: black;
     font-weight: bold;
-    background-color: hsl(201, 100%, 36%);
+    background-color: hsl(190, 100%, 42%);
 }
 #sign-in-button:hover {
     box-shadow: 0px 0px 7px black;
 }
 #sign-in-button:active {
     /* Color should be darker than sign-in button */
-    background-color: hsl(201, 100%, 30%);
+    background-color: hsl(190, 100%, 38%);
 }
