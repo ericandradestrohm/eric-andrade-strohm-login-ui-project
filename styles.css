@@ -32,6 +32,8 @@ input, button {
     width: 37vw;
     min-height: 270px;
     min-width: 300px;
+    max-width: 550px;
+    max-height: 500px;
     background-color:rgba(202, 240, 248, 0.85);
     /* Border and spacing styling */
     border: none;
